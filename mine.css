@@ -1,0 +1,376 @@
+.error {color: #FF0000;}
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+ <!-- padding: 15px; -->
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.menu button:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+.menu button {
+  background-color: #2952a3;
+  border: 1px solid green; /* Green border */
+  color: #ffffff;
+  padding:8px; /* Some padding */
+   margin-bottom: 7px;
+  cursor: pointer; /* Pointer/hand icon */
+  text-align: left;
+  font-family: "Lucida Sans", sans-serif;
+  font-size: 17px;
+  width: 97%; /* Set a width if needed */
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  display: block; /* Make the buttons appear below each other */
+}
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  background-color: #33b5e5;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+
+
+.col-md-border:not(:last-child) {
+        border-right: 1px solid #d7d7d7;
+    }
+    .col-md-border + .col-md-border {
+        border-left: 1px solid #d7d7d7;
+       
+    }
+	table input {
+	
+    background-color: transparent;
+    border: 0px solid;
+	}
+	table input:focus{
+    outline: none;
+	}
+#imageUpload
+{
+    display: none;
+}
+
+#profileImage
+{
+    cursor: pointer;
+	margin-left: -15px;
+	margin-right: auto;
+	display: block;
+}
+
+#profile-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+#profile-container img {
+   width: 100%;
+    height: 100%; 
+}
+td.vcenter{
+ vertical-align:middle;
+}
+.custom-btn {
+	background-color: #99b3ff;
+	border-color: #99b3ff;
+}
+.custom{
+	background-color: #fff;
+	border-color: #99b3ff;
+	border-radius: 12px;
+	padding-top: .5em;
+    padding-bottom: .5em;
+}
+tbody > tr > td:first-child {
+  text-align: center;
+}
+ table > tr> td{
+  text-align: left;
+}
+
+
+tr,td {
+    padding-top: .2em;
+    padding-bottom: .2em;
+	
+}
+.tx{
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.coltable td, 
+th {  
+   border: 1px solid #ddd;
+  text-align: left;
+}
+
+.coltable {
+  border-collapse: collapse;
+
+}
+
+.coltable th,td {
+  padding: 10px;
+}
+.coltable{
+word-wrap: break-word; 
+   
+}	
+.coltable tr:nth-child(even) {
+	background-color: #f2f2f2!important;
+	}
+
+
+
+.sd-container {
+  position: relative;
+  float: left;
+}
+
+.sd {
+  border: 1px solid #c6ecd9;
+  padding: 5px 10px;
+  height: 30px;
+  width: 200px;
+}
+
+.open-button {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  pointer-events: none;
+}
+
+.open-button button {
+  border: none;
+  background: transparent;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #666666;
+  position: absolute;
+  top: 5px;
+ 
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #b3b3b3;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+
+#grad4 {
+  background-color: #e6f2ff; /* For browsers that do not support gradients */
+  background-image: linear-gradient(-90deg,  #e6f2ff, #ffffff); /* Standard syntax (must be last) */
+}	
+
+
+
+.test {
+    border-collapse:separate;
+    border:solid #ddd 2px;
+    border-radius:10px;
+	
+    -moz-border-radius:10px;
+}
+.test tbody{
+	padding : 30px;
+}
+.test thead > tr{
+	height : 30px;
+}
+
+
+.test td:first-child, th:first-child {
+     border-left: none; 
+}
+.test tbody:before {
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 4px;
+ background-color: #2952a3;
+ color: white;
+}
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  align: center;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
